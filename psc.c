@@ -53,10 +53,12 @@ int display(int score)
 if(score==2)
 {
 printf("Password:Weak\n");
+printf("Choose another or use combination of characters,numbers and special characters\n");
 }
 else if(score==3)
 {
 printf("Password:Average/Moderate\n");
+printf("Password strength is average use additional characters avoid using repeated passwords");
 }
 else
 {
