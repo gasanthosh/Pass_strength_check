@@ -7,6 +7,12 @@ int checkpass(char *pass)
   int chlow=0,chup=0,chd=0,chsp=0;
   int len=0;
   len=strlen(pass);
+  const int min_len=8;
+  if(len<min_len)
+  {
+    printf("Password is too short,it must contain atleast 8 characters\n");
+    return score;
+  }
   for(int i=0;i<len;i++)
   {
     if(islower(pass[i]))
@@ -48,7 +54,7 @@ int checkpass(char *pass)
   }
   return score;
 }
-int display(int score)
+void display(int score)
 {
 if(score==2)
 {
@@ -71,6 +77,7 @@ int main()
   printf("Enter the password to test the strength of it:");
   scanf("%s",pass);
   int score=checkpass(pass);
+  if(score>0)
   display(score);
   return 0;
 }
