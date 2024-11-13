@@ -8,7 +8,7 @@ A simple and effective tool to evaluate the strength of passwords. This project 
 - Offers suggestions to enhance password security.
 
 ## Installation & Setup
-#### In Linux
+#### For Linux
 1. Install git:
    ```bash
    sudo apt-get install git-all
@@ -36,7 +36,7 @@ A simple and effective tool to evaluate the strength of passwords. This project 
 
   Output: "Password is Weak"
 
-- Input: "systemAadmin". 
+- Input: "systemADMIN". 
 
   Output: "Password is Average/Moderate"
 
